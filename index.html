@@ -64,6 +64,37 @@
             <Address>
                 E-mail: <a href="mailto:negocios.toutinho@gmail.com">negocios.tourinho@gmail.com</a><br>
                 Telefone: <a href="tel:+5548988084646">(48) 9 8808-4646</a>
+
+                <form action=""> <!-- form: coleção de elementos associados a formulários -->
+                    <!-- action: ação que faz o envio das informações para um servidor (PHP/SQL) -->
+                     <label for="nome">Nome: </label> <!-- Label: legenda da interface - no caso do campo "Nome" -->
+                     <input type="text" id="nome" name="nome" required> <!-- input: elemento de entrada do dado digitado / type: tipo de dado que deve aceitar -->
+
+                     <label for="email">E-mail: </label>
+                     <input type="email" id="email" name="email" required>
+
+                     <label for="Telefone">Telefone: </label>
+                     <input type="tel" id="telefone" name="telefone">
+
+                     <label for="assunto">Assunto: </label>
+                     <select name="assunto" id="assunto"> <!-- select: controle para selecionar opções de um conjunto -->
+                        <option value="orcamento">Orçamento</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <br>
+
+                    <label for="mensages">Mensagem: </label>
+                    <textarea name="mensages" id="mensages" cols="30" rows="10" required></textarea><!-- textarea: espaço para inserir texto / cols e rows: definição do tamanho da caixa de texto -->
+                    <br>
+
+                    <input type="checkbox" name="inscricao" id="inscricao"> 
+                    <label for="inscricao">Deseja receber nossa newsletter?<br>
+                     Fique por dentro. </label>
+                    <br>
+
+                    <input type="submit" value="enviar mensagem">
+                </form>
             </Address>
         </section>
     </footer>
