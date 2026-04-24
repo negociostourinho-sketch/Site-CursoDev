@@ -55,8 +55,40 @@
         </article>
     </section>
 
+    <section id="habilidades">
+        <h2>Habilidades e Tecnologias</h2>
+        <table> <!-- table: elemebto para estruturar uma tabela -->
+            <thead> <!-- thead: linha do cabeçalho da tabela (rótulos das colunas) -->
+                <tr> <!-- tr: linha da tabela -->
+                    <th>Tecnologia</th> <!-- th: coluna da tabela -->
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td> <!-- td: inserir valores nas colunas -->
+                    <td>Iniciante</td><!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
+                    <td>Capaz de contruir estruturas de páginas web semânticas e responsívas.</td>
+                </tr>
+                
+                <tr> <!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
+                    <td>CSS</td> <!-- Coluna 1: Tecnologia -->
+                    <td>Iniciante</td> <!-- Coluna 2: Nível -->
+                    <td>Experiência com flexbox, grid e animações CSS.</td> <!-- Coluna 3: Descrição -->
+                </tr>
+
+                <tr> 
+                    <td>JavaScript</td> <!-- Coluna 1: Tecnologia -->
+                    <td>Iniciante</td> <!-- Coluna 2: Nível -->
+                    <td>Desenvolvimento de script do lado cliente para interações.</td> <!-- Coluna 3: Descrição -->
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <footer>
-        <p>2026₢Todos os direitos reservados</p>
+        <p>2026@Todos os direitos reservados</p>
         <section id="contatos">
             <h2>Contatos</h2>
             <p>Entre em cotato e tire seus projetos do papel</p>
@@ -69,13 +101,13 @@
                     <!-- action: ação que faz o envio das informações para um servidor (PHP/SQL) -->
                      <label for="nome">Nome: </label> <!-- Label: legenda da interface - no caso do campo "Nome" -->
                      <input type="text" id="nome" name="nome" required> <!-- input: elemento de entrada do dado digitado / type: tipo de dado que deve aceitar -->
-
+                    <br>
                      <label for="email">E-mail: </label>
                      <input type="email" id="email" name="email" required>
-
+                    <br>
                      <label for="Telefone">Telefone: </label>
                      <input type="tel" id="telefone" name="telefone">
-
+                    <br>
                      <label for="assunto">Assunto: </label>
                      <select name="assunto" id="assunto"> <!-- select: controle para selecionar opções de um conjunto -->
                         <option value="orcamento">Orçamento</option>
@@ -84,7 +116,7 @@
                     </select>
                     <br>
 
-                    <label for="mensages">Mensagem: </label>
+                    <label for="mensages">Mensagem: </label> <br>
                     <textarea name="mensages" id="mensages" cols="30" rows="10" required></textarea><!-- textarea: espaço para inserir texto / cols e rows: definição do tamanho da caixa de texto -->
                     <br>
 
