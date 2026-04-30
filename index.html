@@ -2,133 +2,136 @@
 <html lang="pt-br"> <!-- Linguagem da página - tag que sugere a linguagem da página -->
 <head> <!-- Cabeçalho não visual-->
     <meta charset="UTF-8"> <!--Comandos padrão: teclado padrão, etc-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-Aleyson Tourinho</title> <!-- Título da página que aparece na guia do navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visão da página para dispositivos móveis -->
+    <title>DevPortifólio-Aleyson Tourinho</title> <!-- Título da página que aparece na guia do navegador -->
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body> <!-- Corpo da página -->
     <header> <!-- Estrutura do cabeçalho da página -->
         <h1>Aleyson Tourinho</h1> <!-- Título maior e destaque -->
         <nav> <!-- Seçao de navegaçao do site -->
-            <ul> <!-- Lista não ordenada para links no menu -->
-                <li><a href="#sobre">Sobre mim</a></li> <!-- Topicos -->
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contatos">Contatos</a>
             </ul>
         </nav>
     </header>
-    <section id="sobre"> <!-- Seção -->
-        <h2>Sobre mim</h2> <!-- Título menor -->
-        <img 
-            src="images/foto_perfil_aleyson.jpeg" title="foto_perfil_aleyson"
-            alt="Foto de Perfil"> 
-            <!-- 
-             <img>: inserir imagem 
-             <src>: atributos source-caminho da imagem 
-             <alt>: texto ou caminho alternativo caso a imagem não carregue -->
-
-        <article> <!-- Textos --> 
-
-            <p> <!-- paragrafo -->
-                Analista financeiro qualificado e focado à entrega de resultados. Com histórico comprovado de entregas de informações precisas, completas e ágeis. Reconhecido pelo zelo e cuidados com o tratamento de dados para tomadas de decisões.
-                Mais de 5 anos de experiência com análise de dados financeiros e tributários e operações voltadas à contas à pagar, aprofundando os conhecimentos e experiências na utilização avançada de Excel e Google Sheets, softwares de gestão como SAP, ORACLE EBS e Sênior.
-                Hábil com manipulação de dados complexos, análises de modelos financeiros, elaboração de relatórios completos e objetivos. Perfil analítico e de atenção aos detalhes, conciso e organizado, focado na qualidade e responsável para gerir dados de alto nível de sensibilidade. Rápida aprendizagem de novas operações e sistemas.
-                Formado em Gestão Financeira e Contabilidade com especialização em Contabilidade, Auditoria e Controladoria. Com conhecimentos adquiridos em  Tributos Federais, Custos e Finanças e habilitações em Gestão de Processos.
-            </p>
-
-        </article>
-            <aside>
-                <h3>Habilidades</h3>
-                <ul>
-                    <li>HTMl</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </aside>   
-    </section>
-
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <article>
-            <p>Primeiro site desenvolvido no curso de Dev FrontEnd pelo SCTec e Senai<br>
-                Modoulo de FrontEnd.
-            </p>
-        </article>
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades e Tecnologias</h2>
-        <table> <!-- table: elemebto para estruturar uma tabela -->
-            <thead> <!-- thead: linha do cabeçalho da tabela (rótulos das colunas) -->
-                <tr> <!-- tr: linha da tabela -->
-                    <th>Tecnologia</th> <!-- th: coluna da tabela -->
-                    <th>Nível</th>
-                    <th>Descrição</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td> <!-- td: inserir valores nas colunas -->
-                    <td>Iniciante</td><!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
-                    <td>Capaz de contruir estruturas de páginas web semânticas e responsívas.</td>
-                </tr>
-                
-                <tr> <!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
-                    <td>CSS</td> <!-- Coluna 1: Tecnologia -->
-                    <td>Iniciante</td> <!-- Coluna 2: Nível -->
-                    <td>Experiência com flexbox, grid e animações CSS.</td> <!-- Coluna 3: Descrição -->
-                </tr>
-
-                <tr> 
-                    <td>JavaScript</td> <!-- Coluna 1: Tecnologia -->
-                    <td>Iniciante</td> <!-- Coluna 2: Nível -->
-                    <td>Desenvolvimento de script do lado cliente para interações.</td> <!-- Coluna 3: Descrição -->
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <footer>
-        <p>2026@Todos os direitos reservados</p>
-        <section id="contatos">
+    <main>
+        <section class="content" id="sobre"> <!-- Seção -->
+            <h2>Sobre mim</h2> <!-- Título menor -->
+            <img 
+                src="images/foto_perfil_aleyson.jpeg" title="foto_perfil_aleyson"
+                alt="Foto de Perfil"> 
+                <!-- 
+                 <img>: inserir imagem 
+                 <src>: atributos source-caminho da imagem 
+                 <alt>: texto ou caminho alternativo caso a imagem não carregue -->
+    
+            <article> <!-- Textos --> 
+                    <p> <!-- paragrafo -->
+                    Analista financeiro qualificado e focado à entrega de resultados. Com histórico comprovado de entregas de informações precisas, completas e ágeis. Reconhecido pelo zelo e cuidados com o tratamento de dados para tomadas de decisões.
+                    Mais de 5 anos de experiência com análise de dados financeiros e tributários e operações voltadas à contas à pagar, aprofundando os conhecimentos e experiências na utilização avançada de Excel e Google Sheets, softwares de gestão como SAP, ORACLE EBS e Sênior.
+                    Hábil com manipulação de dados complexos, análises de modelos financeiros, elaboração de relatórios completos e objetivos. Perfil analítico e de atenção aos detalhes, conciso e organizado, focado na qualidade e responsável para gerir dados de alto nível de sensibilidade. Rápida aprendizagem de novas operações e sistemas.
+                    Formado em Gestão Financeira e Contabilidade com especialização em Contabilidade, Auditoria e Controladoria. Com conhecimentos adquiridos em  Tributos Federais, Custos e Finanças e habilitações em Gestão de Processos.
+                </p>
+    
+            </article>
+                <aside>
+                    <h3>Habilidades</h3>
+                    <ul> <!-- Lista não ordenada para links no menu -->
+                        <li>HTMl</li> <!-- Topicos -->
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </aside>   
+        </section>
+    
+        <section class="content" id="projetos">
+            <h2>Projetos</h2>
+            <article>
+                <p>Primeiro site desenvolvido no curso de Dev FrontEnd pelo SCTec e Senai<br>
+                    Modoulo de FrontEnd.
+                </p>
+            </article>
+        </section>
+    
+        <section class="content" id="habilidades">
+            <h2>Habilidades e Tecnologias</h2>
+            <table> <!-- table: elemebto para estruturar uma tabela -->
+                <thead> <!-- thead: linha do cabeçalho da tabela (rótulos das colunas) -->
+                    <tr> <!-- tr: linha da tabela -->
+                        <th>Tecnologia</th> <!-- th: coluna da tabela -->
+                        <th>Nível</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td> <!-- td: inserir valores nas colunas -->
+                        <td>Iniciante</td><!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
+                        <td>Capaz de contruir estruturas de páginas web semânticas e responsívas.</td>
+                    </tr>
+                    
+                    <tr> <!-- td: deve corresponter com a ordem das colunas estruturadas no thead -->
+                        <td>CSS</td> <!-- Coluna 1: Tecnologia -->
+                        <td>Iniciante</td> <!-- Coluna 2: Nível -->
+                        <td>Experiência com flexbox, grid e animações CSS.</td> <!-- Coluna 3: Descrição -->
+                    </tr>
+    
+                    <tr> 
+                        <td>JavaScript</td> <!-- Coluna 1: Tecnologia -->
+                        <td>Iniciante</td> <!-- Coluna 2: Nível -->
+                        <td>Desenvolvimento de script do lado cliente para interações.</td> <!-- Coluna 3: Descrição -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <section class="contact" id="contatos">
             <h2>Contatos</h2>
             <p>Entre em cotato e tire seus projetos do papel</p>
     
             <Address>
                 E-mail: <a href="mailto:negocios.toutinho@gmail.com">negocios.tourinho@gmail.com</a><br>
                 Telefone: <a href="tel:+5548988084646">(48) 9 8808-4646</a>
-
-                <form action=""> <!-- form: coleção de elementos associados a formulários -->
+    
+                <form action="" id="contact-form"> <!-- form: coleção de elementos associados a formulários -->
                     <!-- action: ação que faz o envio das informações para um servidor (PHP/SQL) -->
-                     <label for="nome">Nome: </label> <!-- Label: legenda da interface - no caso do campo "Nome" -->
+                     <label for="nome">Nome: </label><br> <!-- Label: legenda da interface - no caso do campo "Nome" -->
                      <input type="text" id="nome" name="nome" required> <!-- input: elemento de entrada do dado digitado / type: tipo de dado que deve aceitar -->
                     <br>
-                     <label for="email">E-mail: </label>
+                     <label for="email">E-mail: </label><br>
                      <input type="email" id="email" name="email" required>
                     <br>
-                     <label for="Telefone">Telefone: </label>
+                     <label for="Telefone">Telefone: </label><br>
                      <input type="tel" id="telefone" name="telefone">
                     <br>
-                     <label for="assunto">Assunto: </label>
+                     <label for="assunto">Assunto: </label><br>
                      <select name="assunto" id="assunto"> <!-- select: controle para selecionar opções de um conjunto -->
                         <option value="orcamento">Orçamento</option>
                         <option value="duvida">Dúvida</option>
                         <option value="outro">Outro</option>
                     </select>
                     <br>
-
+    
                     <label for="mensages">Mensagem: </label> <br>
                     <textarea name="mensages" id="mensages" cols="30" rows="10" required></textarea><!-- textarea: espaço para inserir texto / cols e rows: definição do tamanho da caixa de texto -->
                     <br>
-
+    
                     <input type="checkbox" name="inscricao" id="inscricao"> 
                     <label for="inscricao">Deseja receber nossa newsletter?<br>
                      Fique por dentro. </label>
                     <br>
-
+    
                     <input type="submit" value="enviar mensagem">
                 </form>
             </Address>
         </section>
+    </main>
+    <footer>
+        <p>&copy;Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
